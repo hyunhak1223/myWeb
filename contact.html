@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" href="image/H-favicon.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body id="body">
+	<div class="container">
+		<header>
+			<h2><a href="index.html"><span class="square">&nbsp;</span>Hyunhak LEE</a></h2>
+			<div class="nightButton">
+				<input type="button" value="night" id="nightButton">
+			</div>
+
+
+			<nav>
+				<ul class="menu">
+					<li class="menuIcon" id="menuIcon"><img src="image/menuIcon.png" alt="menu icon"></li>
+					<li><a href="index.html">About Me</a></li>
+					<li><a href="motivation.html">Motivation</a></li>
+					<li><a href="skills.html">Skills</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="slidingHeaderMenuOuter" class="slidingHeaderMenuOuter">
+			<div class="slidingHeaderMenu">
+
+				<div id="slidingHeaderMenuCloseButton">
+					<img class="close-icon" src="image/close.png">
+				</div>
+
+
+
+				<div class="slidingHeaderMenuMainMenu">
+
+
+					<ul class="slidingHeaderMenuLi">
+						<li><a href="index.html">About Me</a></li>
+						<li><a href="motivation.html">Motivation</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="contents">
+			<div id="contactMe" class="contactMe">
+
+				<div class="global-page-container">
+					<div class="sectionTitle">
+						<h3>Contact</h3>
+					</div>
+
+					<div class="contactForm">
+
+						<form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+							<input type="text" name="subject" placeholder="Subject" />
+							<input type="text" name="extra_fullName" placeholder="Full Name" />
+							<input type="text" name="extra_email" placeholder="E-mail Address" />
+							<textarea name="text" placeholder="Message"></textarea>
+							<input type="hidden" name="access_token" value="69wts8uow03crv3h6x09bpx0" />
+
+							<input type="hidden" name="success_url" value="https://www.google.com" />
+							<input type="hidden" name="error_url" value="https://www.google.com" />
+
+
+							<input id="submit_form" type="submit" value="Send" />
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<footer>
+
+				<div class="myFooter">
+
+					<span id="currentYear">2018</span> &copy; By Hyunhak Lee
+
+				</div>
+
+			</footer>
+		</div>
+	</div>
+	<script src="javascript/script.js"></script>
+</body>
+
+</html>
