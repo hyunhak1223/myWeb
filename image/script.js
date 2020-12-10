@@ -6,93 +6,24 @@ $(document).ready(function(){
    $("#skillbarCss").animate({width:'60%'},1500);
 
 
+   $(".chart").easyPieChart({
+    scaleColor: false,
+    lineWidth: 7,
+    barColor: "#01DFD7",
+    size:80    
+   })
 
+   
 
-  
-  
-  if (window.innerWidth <= 960) {
-    $("#chart1").easyPieChart({
-      scaleColor: false,
-      lineWidth: 2,
-      barColor: "#01DFD7",
-      size:80
-     })
-  
-     $("#chart2").easyPieChart({
-      scaleColor: false,
-      lineWidth: 2,
-      barColor: "#e74c3c",
-      size:80    
-     })
-  
-     $("#chart3").easyPieChart({
-      scaleColor: false,
-      lineWidth: 2,
-      barColor: "#2ecc71",
-      size:80    
-     })
-  
-     $("#chart4").easyPieChart({
-      scaleColor: false,
-      lineWidth: 2,
-      barColor: "#f1c40f",
-      size:80    
-     })
-     
-  } else {
-    $("#chart1").easyPieChart({
-      scaleColor: false,
-      lineWidth: 7,
-      barColor: "#01DFD7",
-      size:180
-     })
-  
-     $("#chart2").easyPieChart({
-      scaleColor: false,
-      lineWidth: 7,
-      barColor: "#e74c3c",
-      size:180    
-     })
-  
-     $("#chart3").easyPieChart({
-      scaleColor: false,
-      lineWidth: 7,
-      barColor: "#2ecc71",
-      size:180    
-     })
-  
-     $("#chart4").easyPieChart({
-      scaleColor: false,
-      lineWidth: 7,
-      barColor: "#f1c40f",
-      size:180    
-     })
-  }
 
 });
 
-var lastWidth = window.innerWidth
-
-window.addEventListener('resize', function() {
-  var currentWidth = window.innerWidth
-  if (lastWidth !== currentWidth) {location.reload();}
-  
-}, true);
-
-$(".hov-anim").click(function() {
-  if ($(this).attr("src") !== $(this).data("animated")) {
-    $(this).attr("src", $(this).data("animated"))
-  } else {
-    $(this).attr("src", $(this).data("static"))  
-  }
-  
+$(".hov-anim").mouseover(function() {
+  $(this).attr("src", $(this).data("animated"))
+}),
+$(".hov-anim").mouseout(function() {
+  $(this).attr("src", $(this).data("static"))
 });
-
-//load page
-$(window).on('load', function () {
-  $("#loading").hide();
-});
-
 
 
 // Sliding Menu

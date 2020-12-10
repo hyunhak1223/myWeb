@@ -6,6 +6,47 @@
 	
 }
 
+#loading { 
+	width: 100%; 
+	height: 100%; 
+	top: 0px; 
+	left: 0px; 
+	position: fixed; 
+	display: block; 
+	opacity: 0.7; 
+	background-color: #fff; 
+	z-index: 99; 
+	text-align: center; 
+} 
+
+#loadingImage { 
+	position: relative; 
+	top: 50%; 
+	
+	z-index: 100; 
+}
+
+.body1 {
+	background-color: #74b9ff;
+}
+
+.body2 {
+	background-color: #f7d794;
+}
+
+.body3 {
+	background-color: #63cdda;
+}
+
+.lettre {
+	margin: 40px 60px;
+}
+
+p {
+	line-height: 1.5em;
+	text-indent: 15px;
+}
+
 .nightMode {
 	background-color: black;
 	color: white;
@@ -20,7 +61,9 @@
 	margin-right: 10px;
 }
 
-
+.menu a {
+	padding: 0 50px;
+}
 
 ul {
     list-style: none;
@@ -39,7 +82,7 @@ header nav ul li.menuIcon {
 a {
 	text-decoration: none;
 	outline: none;
-	color: #163E3A;;
+	color: #3498db;
 }
 
 a:hover {
@@ -47,7 +90,7 @@ a:hover {
 }
 
 a:visited {
-	color: #163E3A;
+	color: #3498db;
 }
 
 .active a {
@@ -101,8 +144,22 @@ header > h2 {
     background-color: #163E3A;
     border: none;
     color:#fff;
-    text-align: center;
+	text-align: center;
+	cursor: pointer;
 }
+
+#downloadWeb {
+	border-radius: 5px;
+	padding: 1px;
+	width: 200px;
+    background-color: #163E3A;
+    border: none;
+    color:#fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+
 
 .downloadButton {
 	border-radius: 5px;
@@ -112,6 +169,7 @@ header > h2 {
     color:#fff;
 	text-align: center;
 	margin-bottom: 25px;
+	cursor: pointer;
 }
 
 header  nav {
@@ -142,6 +200,7 @@ header nav ul li:last-of-type a{
 
 .contents {
 	margin: 100px 15px;
+	
 }
 
 .container li a {
@@ -180,8 +239,61 @@ header nav ul li:last-of-type a{
 	word-break:break-all;	
 }
 
+.goToTop {
+	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.fade {
+	animation: fadein 5s;
+	-moz-animation: fadein 5s; 
+	-webkit-animation: fadein 5s; 
+	-o-animation: fadein 5s; 
+  }
+  @keyframes fadein {
+	  from {
+		  opacity: 0;
+	  }
+	  to {
+		  opacity: 1;
+	  }
+  }
+  @-moz-keyframes fadein { 
+	  from {
+		  opacity: 0;
+	  }
+	  to {
+		  opacity: 1;
+	  }
+  }
+  @-webkit-keyframes fadein { 
+	  from {
+		  opacity: 0;
+	  }
+	  to {
+		  opacity: 1;
+	  }
+  }
+  @-o-keyframes fadein {
+	  from {
+		  opacity: 0;
+	  }
+	  to {
+		  opacity: 1;
+	  }
+  }
+
+	/*data page*/
+
+  .dataTitle {
+	  margin: 30px 0;
+  }
+
 /* Sliding Header Styles (Sliding Menu) ****************************************************/
 .slidingHeaderMenuOuter {
+	
 	position: fixed;
 	z-index: 99;
 	top: 0;
@@ -202,7 +314,7 @@ header nav ul li:last-of-type a{
 	.slidingHeaderMenuOuter .slidingHeaderMenu {
 		text-align: center;
 		height: 100vh;
-		background-color:white;
+		background-color: #b2bec3;
 		position: relative;
 		width: 100%; 
 	}
@@ -228,9 +340,10 @@ header nav ul li:last-of-type a{
 	}
 
 
-/*skill piechart*/
+/*skill piechart*/"
 
 .chartBoxAll {
+	
 	
 	
 }
@@ -264,14 +377,17 @@ header nav ul li:last-of-type a{
 	
 }
 .chartBoxAll .chartBox .chart {
-	margin: 0 auto;
+	margin: 50px auto;
 	text-align: center;
 	position: relative;
-	width: 80px;
-	height: 80px;
-	line-height: 80px;
-
+	width: 180px;
+	height: 180px;
+	line-height: 180px;
+	font-size: 30px;
  }
+
+ 
+
 
  .iosAppTitle {
 	 margin-top: 40px;
@@ -328,7 +444,7 @@ line-height: 40px;
 }
 #skillHtml
 {
- background-color:#04B404;
+ background-color:#5858FA;
 }
 #skillData
 {
@@ -385,6 +501,7 @@ margin-top: 10px;
 
 /*skill page*/
 
+
 .allSkillInfo {
 	float: left;
 	text-align: center;
@@ -397,16 +514,23 @@ margin-top: 10px;
 	word-break:break-all;
 }
 
+.skillInfo {
+	text-align: center;
+}
+
 .skillInfo h3 {
 	margin: 20px 0;
 	padding-top: 90px;
 	margin-bottom: 30px;
 } 
 
+.javaIframe {
+	margin: 20px 0 70px 0;
+}
 
 
 
-.goToTop {
+.Top {
 	cursor: pointer;
 	float: right;
 	margin-top: 30px;
@@ -552,8 +676,7 @@ div .gif ul {
 @media screen and (max-width: 960px) {
 
      body {
-       
-        background-color: blueviolet;
+	   
 	}
 	
 	
@@ -626,20 +749,53 @@ div .gif ul {
 
 	}
 
+	.chartBoxAll {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-}
+	.chartBox {
+		min-width: 250px;
+		margin: 20px 0;
+	}
 
+	.chartBoxAll h3 {
+		font-size: 15px;
+		margin-top: 20px;
+	}
+
+	.chartBoxAll .chartBox .chart {
+		margin:  auto;
+		text-align: center;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		font-size: 15px;
+	 }
+
+	 .youtubeVideo {
+		 margin-top: 50px;
+	 }
 
 
 /*Design for mobile*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 620px) {
 
 	body {
-       
-        background-color: blue;
+	   
 	}
 
-	
+	.square {
+		margin: 3px 2px;
+	}
+
+	.myName {
+		font-size: 13px;
+		min-width: 70px;
+		margin-left: 5px;
+	}
 
 	#size {
 		display: inline-block;
@@ -655,7 +811,26 @@ div .gif ul {
 		margin-top: 10px;
 	}
 
+	.chartBoxAll .chartBox .chart {
+		margin:  auto;
+		text-align: center;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		font-size: 15px;
+	 }
+
 	
+
+	 .chartBox {
+		min-width: 200px;
+		margin: 20px 0;
+	}
+	
+	.iosAppImage img {
+		width: 50%;
+	}
 
 	/* .skillName 
 	{
@@ -688,8 +863,10 @@ div .gif ul {
 
 		width: 100%;
 		height: 100%;
-		  
+		
 	  }
+
+	
 
 	  div .gif img {
 		width: 100%;

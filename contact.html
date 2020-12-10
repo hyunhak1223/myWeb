@@ -13,21 +13,23 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body id="body">
+<body id="body" class="body3">
+	<div id="loading"><img id="loadingImage" src="image/loading.gif" alt="Loading"></div>
+
 	<div class="container">
 		<header>
-			<h2><a href="index.html"><span class="square">&nbsp;</span>Hyunhak LEE</a></h2>
+			<h2 id="nameLogo" class="myName"><a href="index.html"><span class="square">&nbsp;</span>Hyunhak</a></h2>
 			<div class="nightButton">
-				<input type="button" value="night" id="nightButton">
+				<input type="button" value="nuit" id="nightButton">
+				<input type="button" onclick="window.open('https://github.com/hyunhak1223/myWeb.git', '_blank'); return false;" id="downloadWeb" value="Telecharger mon site web"></button>
 			</div>
 
 
 			<nav>
 				<ul class="menu">
 					<li class="menuIcon" id="menuIcon"><img src="image/menuIcon.png" alt="menu icon"></li>
-					<li><a href="index.html">About Me</a></li>
-					<li><a href="motivation.html">Motivation</a></li>
-					<li><a href="skills.html">Skills</a></li>
+					<li><a href="index.html">Motivation</a></li>
+					<li><a href="skills.html">Connaissance</a></li>
 					<li class="active"><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -46,9 +48,8 @@
 
 
 					<ul class="slidingHeaderMenuLi">
-						<li><a href="index.html">About Me</a></li>
-						<li><a href="motivation.html">Motivation</a></li>
-						<li><a href="skills.html">Skills</a></li>
+						<li><a href="index.html">Motivation</a></li>
+						<li><a href="skills.html">Connaissance</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 
@@ -95,7 +96,7 @@
 
 				<div class="myFooter">
 
-					<span id="currentYear">2018</span> &copy; By Hyunhak Lee
+					<span id="currentYear"></span> &copy; By Hyunhak Lee
 
 				</div>
 
