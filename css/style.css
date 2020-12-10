@@ -62,7 +62,7 @@ p {
 }
 
 .menu a {
-	padding: 0 50px;
+	padding: 0 40px;
 }
 
 ul {
@@ -108,7 +108,7 @@ html, body {
 
 .container {
 	min-height: 100%;
-	width:1440px;
+	
 	max-width: 100%;
 	margin:0;
 	position: relative;	
@@ -664,13 +664,12 @@ div .gif ul {
 /*****CSS MEDIA QUERIES*****/
 
 /*Design for small desktop*/
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
 
 
 	
-	/*나중에 이미지 변환*/
-
-}
+	
+} */
 
 /*Design for tablet*/
 @media screen and (max-width: 960px) {
@@ -795,6 +794,10 @@ div .gif ul {
 		font-size: 13px;
 		min-width: 70px;
 		margin-left: 5px;
+	}
+
+	.lettre {
+		margin: 40px 10px;
 	}
 
 	#size {
